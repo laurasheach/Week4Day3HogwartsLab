@@ -7,9 +7,9 @@
   <input id="last-name" type="text" name="last_name" required />
 
   <label for="house-select">House Allocated</label>
-  <select name="house" required>
+  <select name="house_id" required>
     <% for house in @houses %>
-      <option value="<%= house.house %>"><%= house.house %></option>
+      <option value="<%= house.id.to_i %>"><%= house.house %></option>
     <% end %>
     <!-- <option value="Gryffindor">Gryffindor</option>
     <option value="Ravenclaw">Ravenclaw</option>

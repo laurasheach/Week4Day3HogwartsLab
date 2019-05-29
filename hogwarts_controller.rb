@@ -3,6 +3,11 @@ require('sinatra/contrib/all')
 require_relative('./models/student')
 require_relative('./models/house')
 also_reload('./models/*')
+require('pry')
+
+get '/' do
+  erb(:welcome)
+end
 
 get '/students' do
   @students = Student.all()
