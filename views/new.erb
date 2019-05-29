@@ -8,10 +8,13 @@
 
   <label for="house-select">House Allocated</label>
   <select name="house" required>
-    <option value="Gryffindor">Gryffindor</option>
+    <% for house in @houses %>
+      <option value="<%= house.house %>"><%= house.house %></option>
+    <% end %>
+    <!-- <option value="Gryffindor">Gryffindor</option>
     <option value="Ravenclaw">Ravenclaw</option>
     <option value="Hufflepuff">Hufflepuff</option>
-    <option value="Slytherin">Slytherin</option>
+    <option value="Slytherin">Slytherin</option> -->
   </select>
 
   <label for="age">Age</label>
