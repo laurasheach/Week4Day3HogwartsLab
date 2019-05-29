@@ -32,4 +32,8 @@ class TestStudent < MiniTest::Test
     assert_equal(12, @student.age)
   end
 
+  def test_pretty_name
+    assert_equal("Harry Potter", @student.pretty_name)
+  end
+
 end
