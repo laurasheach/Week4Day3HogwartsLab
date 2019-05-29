@@ -19,6 +19,7 @@ body {
   padding: 0;
   background-image: url("/hogwarts_background.jpg");
   background-size: cover;
+  font-family: 'Poppins', sans-serif;
 }
 
 ul {
@@ -44,7 +45,6 @@ h1 {
 }
 
 table {
-  background-color: rgba(255, 255, 255, 0.5);
   text-align: center;
   width: 70vw;
   margin-left: 15vw;
@@ -53,6 +53,25 @@ table {
 
 td {
   padding: 1vw 2vw;
+  background-color: rgba(255, 255, 255, 0.5);
+}
 
+th {
+  padding: 1vw 2vw;
+  background-color: rgba(255, 255, 255, 0.8);
+}
 
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100vw;
+  align-items: center;
+}
+
+.container div {
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  padding: 1vw 2vw;
 }

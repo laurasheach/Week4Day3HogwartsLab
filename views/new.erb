@@ -1,11 +1,17 @@
-<form action="/students" method="post">
+<h2 class="title">Add a new student</h2>
+<form class="container" action="/students" method="post">
 
+  <div>
   <label for="first-name">First Name</label>
   <input id="first-name" type="text" name="first_name" required />
+  </div>
 
+  <div>
   <label for="last-name">Last Name</label>
   <input id="last-name" type="text" name="last_name" required />
+  </div>
 
+  <div>
   <label for="house-select">House Allocated</label>
   <select name="house_id" required>
     <% for house in @houses %>
@@ -16,10 +22,15 @@
     <option value="Hufflepuff">Hufflepuff</option>
     <option value="Slytherin">Slytherin</option> -->
   </select>
+  </div>
 
+  <div>
   <label for="age">Age</label>
   <input id="age" type="number" min="10" name="age" required />
+  </div>
 
+  <div>
   <input type="submit" value="Add Student">
+  </div>
 
 </form>
